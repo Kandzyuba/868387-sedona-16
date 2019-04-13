@@ -5,64 +5,90 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="index-header">
-      <nav class="index-header__nav">
-        <ul class="index-header__menu">
-          <li><a href="">Главная</a></li>
-          <li><a href="photo.html">Фото и видео</a></li>
-          <li><a href="form.html">Форма отзыва</a></li>
-          <li><a href="">HTML Academy</a></li>
-          <li><a href="#"><img src="" alt="Логотип Sedona"></a></li>
+    <header class="page-header">
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active"><a href="">Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="site-list__item"><a href="">HTML Academy</a></li>
+          <li class="site-list__item"><a href="#"><img src="" alt="Логотип Sedona"></a></li>
         </ul>
-        <button class="index-header__toggle"></button>
+        <button class="main-nav__toggle"></button>
       </nav>
-      <img alt="Welcome">
+      <img class="page-header__logo" alt="Welcome">
     </header>
-    <main class="index-main">
-      <section class="index-main__reasons">
+    <main class="page-main">
+      <section class="page-main__container">
         <ul class="reasons">
-          <li><p>Седона - небольшой городок в Аризоне, заслуживающий большего! <span>Рассмотрим 5 причин по которым Седона круче, чем Гранд каньон!</span></p></li>
-          <li><p>Настоящий городок <span>-№1- Седона не аттракцион для туристов, там течет своя жизнь</span></p><</li>
-          <li><img alt="Фотография ранчо"></li>
-          <li>
-            <p>Жилье <span>Рекомендуем пожить в настоящем мотеле, все как в кино!</span></p>
-            <p>Сувениры <span>Не только китайского, но и местного производства!</span></p>
-            <p>Еда <span>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span></p>
+          <li class="reasons__item">
+            <p class="reasons__name">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="reasons__description">Рассмотрим 5 причин по которым Седона круче, чем Гранд каньон!</p>
           </li>
-          <li><p>Там есть мост дьявола <span>-№2- Да, по нему можно пройти! Если вы осмелитесь, конечно</span></p></li>
-          <li><img alt="Фотография местности"></li>
-          <li><p>Небольшая площадь <span>-№3- Все интересные места находятся очень близко</span></p></li>
-          <li><p>Красивая дорога <span>-№4- Ехать в Седону из Лас-Вегаса совсем не скучно!</span></p></li>
-          <li><p>Мало туристов <span>-№5- Большинство едет в Гранд Каньон и толпится там</span></p></li>
-          <li>
-            <p>Заинтересовались? <span>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</span></p>
-            <button class="index-main__search">Найти гостинницу</button>
+          <li class="reasons__item">
+            <p class="reasons__name">Настоящий городок</p>
+            <p class="reasons__description">-№1- Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </li>
+          <li class="reasons__item">
+            <img class="reasons__image" alt="Фотография ранчо">
+          </li>
+          <li class="reasons__item">
+            <p class="reasons__name">Жилье</p>
+            <p class="reasons__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <p class="reasons__name">Сувениры</p>
+            <p class="reasons__description">Не только китайского, но и местного производства!</p>
+            <p class="reasons__name">Еда</p>
+            <p class="reasons__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="reasons__item">
+            <p class="reasons__name">Там есть мост дьявола</p>
+            <p class="reasons__description">-№2- Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </li>
+          <li class="reasons__item">
+            <img class="reasons__image" alt="Фотография местности">
+          </li>
+          <li class="reasons__item">
+            <p class="reasons__name">Небольшая площадь</p>
+            <p class="reasons__description">-№3- Все интересные места находятся очень близко</p>
+          </li>
+          <li class="reasons__item">
+            <p class="reasons__name">Красивая дорога</p>
+            <p class="reasons__description">-№4- Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="reasons__item">
+            <p class="reasons__name">Мало туристов</p>
+            <p class="reasons__description">-№5- Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+          <li class="reasons__item">
+            <p class="reasons__name">Заинтересовались?</p>
+            <p class="reasons__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <button class="reasons__search">Найти гостинницу</button>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="index-footer">
-      <p class="index-footer__map"><img alt="Седона на местности"></p>
-      <div class="footer-content">
-        <p>#Visitsedona</p>
-        <ul class="index-footer__social social">
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Твиттер</span>
+    <footer class="page-footer">
+      <p class="page-footer__map"><img alt="Седона на местности"></p>
+      <div class="page-footer__content footer-content">
+        <p class="footer-content__name">#Visitsedona</p>
+        <ul class="footer-content__social social">
+          <li class="social__item">
+            <a class="social__button" href="#">
+              <p class="social__name visually-hidden">Твиттер</p>
             </a>
           </li>
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Фейсбук</span>
+          <li class="social__item">
+            <a class="social__button" href="#">
+              <p class="social__name visually-hidden">Фейсбук</p>
             </a>
           </li>
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Ютуб</span>
+          <li class="social__item">
+            <a class="social__button" href="#">
+              <p class="social__name visually-hidden">Ютуб</p>
             </a>
           </li>
         </ul>
-        <a>Разработано <img alt="HTML Академия"></a>
+        <a class="footer-content__partner">Разработано <img alt="HTML Академия"></a>
       </div>
     </footer>
   </body>

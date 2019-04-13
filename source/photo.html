@@ -5,72 +5,80 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="photo-header">
-      <nav class="photo-header__nav">
-        <ul class="photo-header__menu">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="form.html">Форма отзыва</a></li>
-          <li><a href="">HTML Academy</a></li>
-          <li><a href="#"><img src="" alt="Логотип Sedona"></a></li>
+    <header class="page-header">
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="index.html">Главная</a></li>
+          <li class="site-list__item site-list__item--active"><a href="#">Фото и видео</a></li>
+          <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="site-list__item"><a href="">HTML Academy</a></li>
+          <li class="site-list__item"><a href="#"><img src="" alt="Логотип Sedona"></a></li>
         </ul>
-        <button class="photo-header__toggle"></button>
+        <button class="main-nav__toggle"></button>
       </nav>
-      <img alt="Welcome">
+      <img class="page-header__logo" alt="Welcome">
     </header>
-    <main class="photo-main">
-      <section class="photo-main__areas">
-        <ul class="photo-areas">
-          <li><p>Фото и видео <span>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</span></p></li>
-          <li class="photo-content">
-            <img class="photo-content__image">
-            <p class="photo-content__names">Народные просторы <span>Автор фото: Борис</span></p>
-            <p class="photo-content__likes">1350</p>
+    <main class="page-main">
+      <section class="page-main__container">
+        <ul class="photo-area">
+          <li class="photo-area__item">
+            <p class="photo-area__name">Фото и видео</p>
+            <p class="photo-area__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </li>
-          <li class="photo-content">
-            <img class="photo-content__image">
-            <p class="photo-content__names">Местная растительность <span>Автор фото: Сергей</span></p>
-            <p class="photo-content__likes">143</p>
+          <li class="photo-area__item">
+            <img class="photo-area__image">
+            <p class="photo-area__name">Народные просторы</p>
+            <p class="photo-area__authors">Автор фото: Борис</p>
+            <p class="photo-area__likes">1350</p>
           </li>
-          <li class="photo-content">
-            <img class="photo-content__image">
-            <p class="photo-content__names">Дорога на север <span>Автор фото: Петр</span></p>
-            <p class="photo-content__likes">96</p>
+          <li class="photo-area__item">
+            <img class="photo-area__image">
+            <p class="photo-area__name">Местная растительность</p>
+            <p class="photo-area__authors">Автор фото: Сергей</p>
+            <p class="photo-area__likes">143</p>
           </li>
-          <li class="photo-content">
-            <img class="photo-content__image">
-            <p class="photo-content__names">Мост дьявола <span>Автор фото: Антон</span></p>
-            <p class="photo-content__likes">254</p>
+          <li class="photo-area__item">
+            <img class="photo-area__image">
+            <p class="photo-area__name">Дорога на север</p>
+            <p class="photo-area__authors">Автор фото: Петр</p>
+            <p class="photo-area__likes">96</p>
           </li>
-          <li class="video-content">
-            <p class="video-content__text">Все еще сомневаетесь? <span>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</span></p>
-            <video class="video-content__media"></video>
+          <li class="photo-area__item">
+            <img class="photo-area__image">
+            <p class="photo-area__name">Мост дьявола</p>
+            <p class="photo-area__authors">Автор фото: Антон</p>
+            <p class="photo-area__likes">254</p>
           </li>
-
+          <li class="photo-area__item">
+            <p class="photo-area__name">Все еще сомневаетесь?</p>
+            <p class="photo-area__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <video class="photo-area__video"></video>
+          </li>
         </ul>
       </section>
     </main>
-    <footer class="photo-footer">
-      <div class="footer-content">
-        <p>#Visitsedona</p>
-        <ul class="photo-footer__social social">
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Твиттер</span>
+    <footer class="page-footer">
+      <p class="page-footer__map"><img alt="Седона на местности"></p>
+      <div class="page-footer__content footer-content">
+        <p class="footer-content__name">#Visitsedona</p>
+        <ul class="footer-content__social social">
+          <li class="social__item">
+            <a class="social__button" href="#">
+              <p class="social__name visually-hidden">Твиттер</p>
             </a>
           </li>
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Фейсбук</span>
+          <li class="social__item">
+            <a class="social__button" href="#">
+              <p class="social__name visually-hidden">Фейсбук</p>
             </a>
           </li>
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Ютуб</span>
+          <li class="social__item">
+            <a class="social__button" href="#">
+              <p class="social__name visually-hidden">Ютуб</p>
             </a>
           </li>
         </ul>
-        <a>Разработано <img alt="HTML Академия"></a>
+        <a class="footer-content__partner">Разработано <img alt="HTML Академия"></a>
       </div>
     </footer>
   </body>

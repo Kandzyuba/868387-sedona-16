@@ -5,106 +5,108 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="form-header">
-      <nav class="form-header__nav">
-        <ul class="form-header__menu">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="photo.html">Фото и видео</a></li>
-          <li><a href="#">Форма отзыва</a></li>
-          <li><a href="">HTML Academy</a></li>
-          <li><a href="#"><img src="" alt="Логотип Sedona"></a></li>
+    <header class="page-header">
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="index.html">Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="site-list__item site-list__item--active"><a href="#">Форма отзыва</a></li>
+          <li class="site-list__item"><a href="">HTML Academy</a></li>
+          <li class="site-list__item"><a href="#"><img src="" alt="Логотип Sedona"></a></li>
         </ul>
-        <button class="photo-header__toggle"></button>
+        <button class="main-nav__toggle"></button>
       </nav>
-      <img alt="Welcome">
+      <img class="page-header__logo" alt="Welcome">
     </header>
-    <main class="form-main">
-      <section class="main-container">
+    <main class="page-main">
+      <section class="page-main__container">
         <form class="form-content" action="https://echo.htmlacademy.ru" method="GET">
-          <p class="form-content__item-1">Оставьте свой отзыв <span>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</span></p></li>
-          <fieldset class="form-content__item-2">
+          <p class="form-content__item">Оставьте свой отзыв</p>
+          <p class="form-content__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <fieldset class="form-content__item">
             <legend class="form-content__legend">Представьтесь:</legend>
             <label for="content-name">Имя*:</label>
-            <input class="item-2-name" type="text" id="content-name" name="name" placeholder="Петр">
+            <input type="text" id="content-name" name="name" placeholder="Петр">
             <label for="content-surname">Фамилия*:</label>
             <input type="text" id="content-surname" name="surname" placeholder="Иванов">
             <label for="content-patronymic">Отчество:</label>
             <input type="text" id="content-patronymic" name="patronymic" placeholder="Александрович">
           </fieldset>
-          <fieldset class="form-content__item-3">
+          <fieldset class="form-content__item">
             <legend class="form-content__legend">Контактная информация:</legend>
             <label for="content-phone">Контактный телефон*:</label>
-            <input class="item-2-name" type="text" id="content-phone" name="phone" placeholder="Введите телефон">
+            <input type="text" id="content-phone" name="phone" placeholder="Введите телефон">
             <label for="content-email">Электронная почта*:</label>
             <input type="text" id="content-email" name="email" placeholder="Введите e-mail">
           </fieldset>
-          <fieldset class="form-content__item-4">
+          <fieldset class="form-content__item content-radio">
             <legend class="form-content__legend">Ваше общее впечатление:</legend>
-            <ul>
-              <li class="form-content--option">
-                <input class="silence content-radio" type="radio" id="positive" name="grid-group" value="positive" checked>
+            <ul class="content-radio__list">
+              <li class="content-radio__item">
+                <input class="silence" type="radio" id="positive" name="grid-group" value="positive" checked>
                 <label for="positive">Скорее положительное</label>
               </li>
-              <li class="form-content--option">
-                <input class="silence content-radio" type="radio" id="negative" name="grid-group" value="negative">
+              <li class="content-radio__item">
+                <input class="silence" type="radio" id="negative" name="grid-group" value="negative">
                 <label for="negative">Скорее отрицательное</label>
               </li>
-              <li class="form-content--option">
-                <input class="silence content-radio" type="radio" id="question" name="grid-group" value="quesstion">
+              <li class="content-radio__item">
+                <input class="silence" type="radio" id="question" name="grid-group" value="quesstion">
                 <label for="question">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form-content__item-5">
+          <fieldset class="form-content__item content-check">
             <legend class="form-content__legend">Посещенные достопримечательности:</legend>
-            <ul>
-              <li class="form-content--option">
-                <input class="silence content-checkbox" type="checkbox" id="check-demon" name="demon" checked>
+            <ul class="content-check__list">
+              <li class="content-check__item">
+                <input class="silence" type="checkbox" id="check-demon" name="demon" checked>
                 <label for="check-demon">Мост Дьявола</label>
               </li>
-              <li class="form-content--option">
-                <input class="silence content-checkbox" type="checkbox" id="check-hill" name="hill" checked>
+              <li class="content-check__item">
+                <input class="silence" type="checkbox" id="check-hill" name="hill" checked>
                 <label for="check-hill">Гора-Колокол</label>
               </li>
-              <li class="form-content--option">
-                <input class="silence content-checkbox" type="checkbox" id="check-slide" name="slide" checked>
+              <li class="content-check__item">
+                <input class="silence" type="checkbox" id="check-slide" name="slide" checked>
                 <label for="check-slide">Слайд-парк</label>
               </li>
-              <li class="form-content--option">
-                <input class="silence content-checkbox" type="checkbox" id="check-red-rock" name="red-rock">
+              <li class="content-check__item">
+                <input class="silence" type="checkbox" id="check-red-rock" name="red-rock">
                 <label for="check-red-rock">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form-content__item-6">
+          <fieldset class="form-content__item">
             <legend class="form-content__legend">Опишите свои эмоции:</legend>
-            <textarea id="content-feedback" name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button class="button pages__button" type="submit">Отправить отзыв</button>
+          <button class="form-content__button" type="submit">Отправить отзыв</button>
         </form>
       </section>
     </main>
-    <footer class="form-footer">
-      <div class="footer-content">
-        <p>#Visitsedona</p>
-        <ul class="form-footer__social social">
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Твиттер</span>
+    <footer class="page-footer">
+      <p class="page-footer__map"><img alt="Седона на местности"></p>
+      <div class="page-footer__content footer-content">
+        <p class="footer-content__name">#Visitsedona</p>
+        <ul class="footer-content__social social">
+          <li class="social__item">
+            <a class="social__button" href="#">
+              <p class="social__name visually-hidden">Твиттер</p>
             </a>
           </li>
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Фейсбук</span>
+          <li class="social__item">
+            <a class="social__button" href="#">
+              <p class="social__name visually-hidden">Фейсбук</p>
             </a>
           </li>
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Ютуб</span>
+          <li class="social__item">
+            <a class="social__button" href="#">
+              <p class="social__name visually-hidden">Ютуб</p>
             </a>
           </li>
         </ul>
-        <a>Разработано <img alt="HTML Академия"></a>
+        <a class="footer-content__partner">Разработано <img alt="HTML Академия"></a>
       </div>
     </footer>
   </body>
