@@ -19,77 +19,82 @@
       <img class="page-header__logo" alt="Welcome">
     </header>
     <main class="page-main">
-      <section class="page-main__container">
-        <ul class="reasons">
-          <li class="reasons__item">
-            <p class="reasons__name">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-            <p class="reasons__description">Рассмотрим 5 причин по которым Седона круче, чем Гранд каньон!</p>
-          </li>
-          <li class="reasons__item">
-            <p class="reasons__name">Настоящий городок</p>
-            <p class="reasons__description">-№1- Седона не аттракцион для туристов, там течет своя жизнь</p>
-          </li>
-          <li class="reasons__item">
-            <img class="reasons__image" alt="Фотография ранчо">
-          </li>
-          <li class="reasons__item">
-            <p class="reasons__name">Жилье</p>
-            <p class="reasons__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            <p class="reasons__name">Сувениры</p>
-            <p class="reasons__description">Не только китайского, но и местного производства!</p>
-            <p class="reasons__name">Еда</p>
-            <p class="reasons__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="reasons__item">
-            <p class="reasons__name">Там есть мост дьявола</p>
-            <p class="reasons__description">-№2- Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          </li>
-          <li class="reasons__item">
-            <img class="reasons__image" alt="Фотография местности">
-          </li>
-          <li class="reasons__item">
-            <p class="reasons__name">Небольшая площадь</p>
-            <p class="reasons__description">-№3- Все интересные места находятся очень близко</p>
-          </li>
-          <li class="reasons__item">
-            <p class="reasons__name">Красивая дорога</p>
-            <p class="reasons__description">-№4- Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="reasons__item">
-            <p class="reasons__name">Мало туристов</p>
-            <p class="reasons__description">-№5- Большинство едет в Гранд Каньон и толпится там</p>
-          </li>
-          <li class="reasons__item">
-            <p class="reasons__name">Заинтересовались?</p>
-            <p class="reasons__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <button class="reasons__search">Найти гостинницу</button>
-          </li>
-        </ul>
-      </section>
+      <div class="page-main__head index-head">
+        <p class="index-head__name">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="index-head__description">Рассмотрим 5 причин по которым Седона круче, чем Гранд каньон!</p>
+      </div>
+      <ul class="reasons">
+        <li class="reasons__item">
+          <p class="reasons__name">Настоящий городок</p>
+          <p class="reasons__text-num">-№1-</p>
+          <p class="reasons__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <img class="reasons__image" alt="Фотография ранчо">
+        </li>
+        <li class="reasons__item">
+          <ul class="features">
+            <li class="features__item">
+              <p class="features__name">Жилье</p>
+              <p class="features__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="features__item">
+              <p class="features__name">Сувениры</p>
+              <p class="features__description">Не только китайского, но и местного производства!</p>
+            </li>
+            <li class="features__item">
+              <p class="features__name">Еда</p>
+              <p class="features__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+          </ul>
+        </li>
+        <li class="reasons__item">
+          <p class="reasons__name">Там есть мост дьявола</p>
+          <p class="reasons__text-num">-№2-</p>
+          <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <img class="reasons__image" alt="Фотография местности">
+        </li>
+        <li class="reasons__item">
+          <p class="reasons__name">Небольшая площадь</p>
+          <p class="reasons__text-num">-№3-</p>
+          <p class="reasons__description">Все интересные места находятся очень близко</p>
+        </li>
+        <li class="reasons__item">
+          <p class="reasons__name">Красивая дорога</p>
+          <p class="reasons__text-num">-№4-</p>
+          <p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
+        <li class="reasons__item">
+          <p class="reasons__name">Мало туристов</p>
+          <p class="reasons__text-num">-№5-</p>
+          <p class="reasons__description">Большинство едет в Гранд Каньон и толпится там</p>
+        </li>
+      </ul>
+      <div class="page-main__foot index-foot">
+        <p class="index-foot__name">Заинтересовались?</p>
+        <p class="index-foot__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="index-foot__search">Найти гостинницу</button>
+      </div>
     </main>
     <footer class="page-footer">
-      <p class="page-footer__map"><img alt="Седона на местности"></p>
-      <div class="page-footer__content footer-content">
-        <p class="footer-content__name">#Visitsedona</p>
-        <ul class="footer-content__social social">
-          <li class="social__item">
-            <a class="social__button" href="#">
-              <p class="social__name visually-hidden">Твиттер</p>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__button" href="#">
-              <p class="social__name visually-hidden">Фейсбук</p>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__button" href="#">
-              <p class="social__name visually-hidden">Ютуб</p>
-            </a>
-          </li>
-        </ul>
-        <a class="footer-content__partner">Разработано <img alt="HTML Академия"></a>
-      </div>
+      <p class="page-footer__map map"><img alt="Седона на местности"></p>
+      <p class="page-footer__name">#Visitsedona</p>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__button" href="#">
+            <p class="social__name visually-hidden">Твиттер</p>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__button" href="#">
+            <p class="social__name visually-hidden">Фейсбук</p>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__button" href="#">
+            <p class="social__name visually-hidden">Ютуб</p>
+          </a>
+        </li>
+      </ul>
+      <a class="page-footer__partner">Разработано <img alt="HTML Академия"></a>
     </footer>
   </body>
 </html>

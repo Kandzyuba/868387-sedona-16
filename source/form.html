@@ -19,77 +19,73 @@
       <img class="page-header__logo" alt="Welcome">
     </header>
     <main class="page-main">
-      <section class="page-main__container">
-        <form class="form-content" action="https://echo.htmlacademy.ru" method="GET">
-          <p class="form-content__item">Оставьте свой отзыв</p>
-          <p class="form-content__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-          <fieldset class="form-content__item">
-            <legend class="form-content__legend">Представьтесь:</legend>
-            <label for="content-name">Имя*:</label>
-            <input type="text" id="content-name" name="name" placeholder="Петр">
-            <label for="content-surname">Фамилия*:</label>
-            <input type="text" id="content-surname" name="surname" placeholder="Иванов">
-            <label for="content-patronymic">Отчество:</label>
-            <input type="text" id="content-patronymic" name="patronymic" placeholder="Александрович">
-          </fieldset>
-          <fieldset class="form-content__item">
-            <legend class="form-content__legend">Контактная информация:</legend>
-            <label for="content-phone">Контактный телефон*:</label>
-            <input type="text" id="content-phone" name="phone" placeholder="Введите телефон">
-            <label for="content-email">Электронная почта*:</label>
-            <input type="text" id="content-email" name="email" placeholder="Введите e-mail">
-          </fieldset>
-          <fieldset class="form-content__item content-radio">
-            <legend class="form-content__legend">Ваше общее впечатление:</legend>
-            <ul class="content-radio__list">
-              <li class="content-radio__item">
-                <input class="silence" type="radio" id="positive" name="grid-group" value="positive" checked>
-                <label for="positive">Скорее положительное</label>
-              </li>
-              <li class="content-radio__item">
-                <input class="silence" type="radio" id="negative" name="grid-group" value="negative">
-                <label for="negative">Скорее отрицательное</label>
-              </li>
-              <li class="content-radio__item">
-                <input class="silence" type="radio" id="question" name="grid-group" value="quesstion">
-                <label for="question">Затрудняюсь ответить</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form-content__item content-check">
-            <legend class="form-content__legend">Посещенные достопримечательности:</legend>
-            <ul class="content-check__list">
-              <li class="content-check__item">
-                <input class="silence" type="checkbox" id="check-demon" name="demon" checked>
-                <label for="check-demon">Мост Дьявола</label>
-              </li>
-              <li class="content-check__item">
-                <input class="silence" type="checkbox" id="check-hill" name="hill" checked>
-                <label for="check-hill">Гора-Колокол</label>
-              </li>
-              <li class="content-check__item">
-                <input class="silence" type="checkbox" id="check-slide" name="slide" checked>
-                <label for="check-slide">Слайд-парк</label>
-              </li>
-              <li class="content-check__item">
-                <input class="silence" type="checkbox" id="check-red-rock" name="red-rock">
-                <label for="check-red-rock">Красные скалы</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form-content__item">
-            <legend class="form-content__legend">Опишите свои эмоции:</legend>
-            <textarea name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
-          </fieldset>
-          <button class="form-content__button" type="submit">Отправить отзыв</button>
-        </form>
-      </section>
+      <form class="page-main__form form-content" action="https://echo.htmlacademy.ru" method="GET">
+        <p class="form-content__head">Оставьте свой отзыв</p>
+        <p class="form-content__head-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <fieldset class="form-content__item">
+          <legend class="form-content__legend">Представьтесь:</legend>
+          <label for="content-name">Имя*:</label>
+          <input type="text" id="content-name" name="name" placeholder="Петр">
+          <label for="content-surname">Фамилия*:</label>
+          <input type="text" id="content-surname" name="surname" placeholder="Иванов">
+          <label for="content-patronymic">Отчество:</label>
+          <input type="text" id="content-patronymic" name="patronymic" placeholder="Александрович">
+        </fieldset>
+        <fieldset class="form-content__item">
+          <legend class="form-content__legend">Контактная информация:</legend>
+          <label for="content-phone">Контактный телефон*:</label>
+          <input type="text" id="content-phone" name="phone" placeholder="Введите телефон">
+          <label for="content-email">Электронная почта*:</label>
+          <input type="text" id="content-email" name="email" placeholder="Введите e-mail">
+        </fieldset>
+        <fieldset class="form-content__item">
+          <legend class="form-content__legend">Ваше общее впечатление:</legend>
+          <ul class="form-content__list">
+            <li class="form-content__list-item">
+              <input class="silence" type="radio" id="positive" name="grid-group" value="positive" checked>
+              <label for="positive">Скорее положительное</label>
+            </li>
+            <li class="form-content__list-item">
+              <input class="silence" type="radio" id="negative" name="grid-group" value="negative">
+              <label for="negative">Скорее отрицательное</label>
+            </li>
+            <li class="form-content__list-item">
+              <input class="silence" type="radio" id="question" name="grid-group" value="quesstion">
+              <label for="question">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-content__item content-check">
+          <legend class="form-content__legend">Посещенные достопримечательности:</legend>
+          <ul class="form-content__list">
+            <li class="form-content__list-item">
+              <input type="checkbox" id="check-demon" name="demon" checked>
+              <label for="check-demon">Мост Дьявола</label>
+            </li>
+            <li class="form-content__list-item">
+              <input type="checkbox" id="check-hill" name="hill" checked>
+              <label for="check-hill">Гора-Колокол</label>
+            </li>
+            <li class="form-content__list-item">
+              <input type="checkbox" id="check-slide" name="slide" checked>
+              <label for="check-slide">Слайд-парк</label>
+            </li>
+            <li class="form-content__list-item">
+              <input type="checkbox" id="check-red-rock" name="red-rock">
+              <label for="check-red-rock">Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-content__item">
+          <legend class="form-content__legend">Опишите свои эмоции:</legend>
+          <textarea name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <button class="form-content__button" type="submit">Отправить отзыв</button>
+      </form>
     </main>
     <footer class="page-footer">
-      <p class="page-footer__map"><img alt="Седона на местности"></p>
-      <div class="page-footer__content footer-content">
-        <p class="footer-content__name">#Visitsedona</p>
-        <ul class="footer-content__social social">
+        <p class="page-footer__name">#Visitsedona</p>
+        <ul class="page-footer__social social">
           <li class="social__item">
             <a class="social__button" href="#">
               <p class="social__name visually-hidden">Твиттер</p>
@@ -106,8 +102,7 @@
             </a>
           </li>
         </ul>
-        <a class="footer-content__partner">Разработано <img alt="HTML Академия"></a>
-      </div>
+        <a class="page-footer__partner">Разработано <img alt="HTML Академия"></a>
     </footer>
   </body>
 </html>
