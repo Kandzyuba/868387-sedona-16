@@ -19,11 +19,11 @@
       <img class="page-header__logo" alt="Welcome">
     </header>
     <main class="page-main">
-      <form class="page-main__form form-content" action="https://echo.htmlacademy.ru" method="GET">
-        <p class="form-content__head">Оставьте свой отзыв</p>
-        <p class="form-content__head-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        <fieldset class="form-content__item">
-          <legend class="form-content__legend">Представьтесь:</legend>
+      <p class="page-main__head-name">Оставьте свой отзыв</p>
+      <p class="page-main__head-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <form class="form" action="https://echo.htmlacademy.ru" method="GET">
+        <fieldset class="form__item">
+          <legend class="form__item-legend">Представьтесь:</legend>
           <label for="content-name">Имя*:</label>
           <input type="text" id="content-name" name="name" placeholder="Петр">
           <label for="content-surname">Фамилия*:</label>
@@ -31,61 +31,61 @@
           <label for="content-patronymic">Отчество:</label>
           <input type="text" id="content-patronymic" name="patronymic" placeholder="Александрович">
         </fieldset>
-        <fieldset class="form-content__item">
-          <legend class="form-content__legend">Контактная информация:</legend>
+        <fieldset class="form__item">
+          <legend class="form__item-legend">Контактная информация:</legend>
           <label for="content-phone">Контактный телефон*:</label>
           <input type="text" id="content-phone" name="phone" placeholder="Введите телефон">
           <label for="content-email">Электронная почта*:</label>
           <input type="text" id="content-email" name="email" placeholder="Введите e-mail">
         </fieldset>
-        <fieldset class="form-content__item">
-          <legend class="form-content__legend">Ваше общее впечатление:</legend>
-          <ul class="form-content__list">
-            <li class="form-content__list-item">
-              <input class="silence" type="radio" id="positive" name="grid-group" value="positive" checked>
+        <fieldset class="form__item">
+          <legend class="form__item-legend">Ваше общее впечатление:</legend>
+          <ul class="form__item-radiolist">
+            <li class="form__item-content">
+              <input class="form__item-content-silence" type="radio" id="positive" name="grid-group" value="positive" checked>
               <label for="positive">Скорее положительное</label>
             </li>
-            <li class="form-content__list-item">
-              <input class="silence" type="radio" id="negative" name="grid-group" value="negative">
+            <li class="form__item-list-content">
+              <input class="form__item-content-silence" type="radio" id="negative" name="grid-group" value="negative">
               <label for="negative">Скорее отрицательное</label>
             </li>
-            <li class="form-content__list-item">
-              <input class="silence" type="radio" id="question" name="grid-group" value="quesstion">
+            <li class="form__item-list-content">
+              <input class="form__item-content-silence" type="radio" id="question" name="grid-group" value="quesstion">
               <label for="question">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-content__item content-check">
-          <legend class="form-content__legend">Посещенные достопримечательности:</legend>
-          <ul class="form-content__list">
-            <li class="form-content__list-item">
-              <input type="checkbox" id="check-demon" name="demon" checked>
+        <fieldset class="form__item">
+          <legend class="form__item-legend">Посещенные достопримечательности:</legend>
+          <ul class="form__item-checklist">
+            <li class="form__item-content">
+              <input class="form__item-content-silence" type="checkbox" id="check-demon" name="demon" checked>
               <label for="check-demon">Мост Дьявола</label>
             </li>
-            <li class="form-content__list-item">
-              <input type="checkbox" id="check-hill" name="hill" checked>
+            <li class="form__item-content">
+              <input class="form__item-content-silence" type="checkbox" id="check-hill" name="hill" checked>
               <label for="check-hill">Гора-Колокол</label>
             </li>
-            <li class="form-content__list-item">
-              <input type="checkbox" id="check-slide" name="slide" checked>
+            <li class="form__item-content">
+              <input class="form__item-content-silence" type="checkbox" id="check-slide" name="slide" checked>
               <label for="check-slide">Слайд-парк</label>
             </li>
-            <li class="form-content__list-item">
-              <input type="checkbox" id="check-red-rock" name="red-rock">
+            <li class="form__item-content">
+              <input class="form__item-content-silence" type="checkbox" id="check-red-rock" name="red-rock">
               <label for="check-red-rock">Красные скалы</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-content__item">
-          <legend class="form-content__legend">Опишите свои эмоции:</legend>
+        <fieldset class="form__item">
+          <legend class="form__item-legend">Опишите свои эмоции:</legend>
           <textarea name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
-        <button class="form-content__button" type="submit">Отправить отзыв</button>
+        <button class="form__item-button button" type="submit">Отправить отзыв</button>
       </form>
     </main>
     <footer class="page-footer">
-        <p class="page-footer__name">#Visitsedona</p>
-        <ul class="page-footer__social social">
+        <p class="page-footer__hashtag">#Visitsedona</p>
+        <ul class="social">
           <li class="social__item">
             <a class="social__button" href="#">
               <p class="social__name visually-hidden">Твиттер</p>
