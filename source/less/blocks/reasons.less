@@ -8,6 +8,8 @@
   &:nth-child(-2n + 3) {
     background-color: @ground-color;
     color: white;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   p {
@@ -33,6 +35,10 @@
       width: 100%;
     }
   }
+
+  .reasons__item-content {
+    width: 256px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -46,5 +52,9 @@
     &:nth-child(-2n + 3) {
       width: 100%;
     }
+  }
+
+  .reasons__item-content {
+    width: 400px;
   }
 }

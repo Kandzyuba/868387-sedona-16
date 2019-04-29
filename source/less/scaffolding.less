@@ -16,7 +16,7 @@ body {
   font-weight: 500;
   line-height: 24px;
   color: @head-color;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   text-transform: uppercase;
 }
 
@@ -28,4 +28,22 @@ body {
   margin: -1px;
   left: 0;
   top: 0;
+}
+
+.container {
+  width: 320px;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1200px;
+  }
 }
