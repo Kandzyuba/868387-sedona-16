@@ -1,5 +1,9 @@
 .features {
   .list-reset();
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: auto;
 }
 
 .features__name {
@@ -12,4 +16,29 @@
   line-height: 21px;
   color: @description-color;
   text-align: start;
+}
+
+@media (min-width: @tablet-width) {
+  .features {
+    width: @tablet-width;
+  }
+
+  .features__item {
+    width: 170px;
+
+    &:nth-child(2) {
+      order: 1;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features {
+    width: @desktop-width;
+    padding-right: 80px;
+  }
+
+  .features__item {
+    width: 260px;
+  }
 }

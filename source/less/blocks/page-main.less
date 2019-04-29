@@ -1,10 +1,8 @@
 .page-main {
-  .system-border();
   width: 320px;
   margin: 0 auto;
   text-align: center;
 }
-
 
 .page-main__head-name {
   font-weight: 700;
@@ -17,4 +15,45 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    width: @tablet-width;
+
+  }
+
+  .page-main__head {
+    &-name, &-description {
+      width: 550px;
+      margin: auto;
+    }
+  }
+
+  .page-main__foot {
+    &-name, &-description, &-button {
+      width: 458px;
+      margin: auto;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main {
+    width: @desktop-width;
+    padding: 0 40px;
+    background-color: #f2f2f2;
+  }
+
+  .page-main__head {
+    &-name, &-description {
+      background-color: #ffffff;
+    }
+  }
+
+  .page-main__foot {
+    &-name, &-description, &-button {
+      background-color: #ffffff;
+    }
+  }
 }

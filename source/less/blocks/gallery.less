@@ -1,5 +1,7 @@
 .gallery {
   .list-reset();
+  display: flex;
+  flex-wrap: wrap;
 
   p {
     text-align: left;
@@ -20,4 +22,30 @@
 
 .gallery__likes {
   font-weight: 700;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery {
+    width: auto;
+  }
+
+  .gallery__item {
+    width: 324px;
+    padding: 0 60px;
+
+    &:first-child {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery {
+    background-color: #ffffff;
+  }
+
+  .gallery__item {
+    width: 400px;
+    padding: 0;
+  }
 }
