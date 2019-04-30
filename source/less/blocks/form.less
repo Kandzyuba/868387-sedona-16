@@ -1,3 +1,9 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .form__item {
   border: none;
   text-align: left;
@@ -16,4 +22,35 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    width: auto;
+    padding: 0 60px;
+  }
+
+  .form__item {
+    width: 100%;
+
+    &:nth-child(-2n + 3) {
+      width: 48%;
+    }
+
+    &:nth-child(3) {
+      order: -1;
+    }
+  }
+
+  .form__item-checklist {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    padding: 0 90px;
+    background-color: #ffffff;
+  }
 }

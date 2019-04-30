@@ -1,11 +1,15 @@
 .reasons {
   .list-reset();
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .reasons__item {
   &:nth-child(-2n + 3) {
     background-color: @ground-color;
     color: white;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   p {
@@ -17,4 +21,40 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+}
+
+@media (min-width: @tablet-width) {
+  .reasons {
+    width: auto;
+  }
+
+  .reasons__item {
+    width: 256px;
+
+    &:nth-child(-2n + 3) {
+      width: 100%;
+    }
+  }
+
+  .reasons__item-content {
+    width: 256px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reasons {
+    background-color: #ffffff;
+  }
+
+  .reasons__item {
+    width: 400px;
+
+    &:nth-child(-2n + 3) {
+      width: 100%;
+    }
+  }
+
+  .reasons__item-content {
+    width: 400px;
+  }
 }
