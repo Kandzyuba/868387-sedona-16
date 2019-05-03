@@ -2,11 +2,48 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .form__item {
+  .list-reset();
+  width: auto;
   border: none;
   text-align: left;
+}
+
+.form__item-list {
+  .list-reset();
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__item-listarea {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding-bottom: 20px;
+
+  label {
+    padding-right: 14px;
+    flex-grow: 1;
+    margin: auto 0;
+  }
+
+  input {
+    font-family: @font;
+    height: 58px;
+    flex-grow: 2;
+    padding-left: 22px;
+    font-size: 18px;
+    background-color: #f2f2f2;
+    font-weight: 700;
+    padding-right: 0;
+    border: none;
+  }
 }
 
 .form__item-legend {
@@ -14,6 +51,7 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
+  padding-bottom: 22px;
 }
 
 .form__item-content {

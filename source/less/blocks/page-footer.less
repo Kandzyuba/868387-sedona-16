@@ -1,5 +1,4 @@
 .page-footer {
-  .system-border();
   width: 320px;
   margin: 0 auto;
   display: flex;
@@ -11,12 +10,24 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  text-align: center;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 36px;
 }
 
 .page-footer__partner {
+  position: relative;
+  margin-left: 72px;
+  padding-top: 44px;
+  width: 136px;
   line-height: 26px;
   text-align: center;
+
+  img {
+    position: absolute;
+    right: -15px;
+    top: 40px;
+  }
 }
 
 @media (min-width: @tablet-width) {

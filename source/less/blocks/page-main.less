@@ -4,17 +4,56 @@
   text-align: center;
 }
 
-.page-main__head-name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  padding: 0 10px;
+.page-main__head {
+
+  &-name,
+  &-description {
+    width: 275px;
+    margin: 0 auto;
+  }
+
+  &-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 30px;
+  }
+
+  &--form {
+    padding-top: 25px;
+    padding-bottom: 19px;
+  }
+
+  &--photo {
+    margin-top: 25px;
+    margin-bottom: 28px;
+  }
+
+  &--index {
+    margin-top: 30px;
+    margin-bottom: 44px;
+  }
 }
 
-.page-main__foot-name {
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
+.page-main__foot {
+
+  &-name {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    padding-top: 8px;
+    margin-bottom: 20px;
+  }
+
+  &-description {
+    width: 280px;
+    margin: auto;
+    padding-bottom: 35px;
+  }
+
+  &-button {
+    margin-bottom: 50px;
+  }
 }
 
 @media (min-width: @tablet-width) {

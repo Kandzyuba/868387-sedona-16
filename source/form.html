@@ -20,20 +20,28 @@
           </ul>
           <button class="main-nav__toggle"></button>
         </nav>
-        <img class="page-header__logo" width="320" height="389" src="img/bg-back-mobile@1x.jpg" alt="Welcome">
+        <img class="page-header__logo page-header__logo--mini" width="320" height="158" src="img/bg-back-mobile@1x.jpg" alt="Welcome">
       </header>
       <main class="page-main">
         <p class="page-main__head-name">Оставьте свой отзыв</p>
-        <p class="page-main__head-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <p class="page-main__head-description page-main__head--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form class="form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="form__item">
             <legend class="form__item-legend">Представьтесь:</legend>
-            <label for="content-name">Имя*:</label>
-            <input type="text" id="content-name" name="name" placeholder="Петр">
-            <label for="content-surname">Фамилия*:</label>
-            <input type="text" id="content-surname" name="surname" placeholder="Иванов">
-            <label for="content-patronymic">Отчество:</label>
-            <input type="text" id="content-patronymic" name="patronymic" placeholder="Александрович">
+            <ul class="form__item-list">
+              <li class="form__item-listarea">
+                <label for="content-name">Имя*:</label>
+                <input type="text" id="content-name" name="name" placeholder="Петр">
+              </li>
+              <li class="form__item-listarea">
+                <label for="content-surname">Фамилия*:</label>
+                <input type="text" id="content-surname" name="surname" placeholder="Иванов">
+              </li>
+              <li class="form__item-listarea">
+                <label for="content-patronymic">Отчество:</label>
+                <input type="text" id="content-patronymic" name="patronymic" placeholder="Александрович">
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="form__item">
             <legend class="form__item-legend">Контактная информация:</legend>

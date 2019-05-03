@@ -4,15 +4,45 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: auto;
+  padding-bottom: 20px;
+  padding-top: 26px;
+}
+
+.features__item {
+  width: 300px;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+.features__item--house {
+  background: url("../../img/icon-house.svg") no-repeat 21px 0px;
+  background-size: 38px 38px;
+}
+
+.features__item--souvenir {
+  background: url("../../img/icon-gift.svg") no-repeat 22px 0px;
+  background-size: 38px 38px;
+}
+
+.features__item--burger {
+  background: url("../../img/icon-burger.svg") no-repeat 19px 4px;
+  background-size: 38px 38px;
 }
 
 .features__name {
+  .reset();
+  position: relative;
+  margin-bottom: 14px;
+  text-align: left;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
 }
 
 .features__description {
+  .reset();
+  margin-bottom: 18px;
+  padding-top: 30px;
   line-height: 21px;
   color: @description-color;
   text-align: start;

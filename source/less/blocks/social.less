@@ -1,14 +1,30 @@
 .social {
+  .reset();
   width: 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: auto;
+  margin: 0 84px;
 
   .social__item {
-    background-color: @ground-color;
-    height: 50px;
-    width: 50px;
     .list-reset();
+
+    height: 48px;
+    width: 46px;
+
+    &:nth-child(1) {
+      background: url("../../img/icon-twitter.svg") no-repeat 50% 50%;
+      background-color: @ground-color;
+    }
+
+    &:nth-child(2) {
+      background: url("../../img/icon-facebook.svg") no-repeat 50% 50%;
+      background-color: @ground-color;
+    }
+
+    &:nth-child(3) {
+      background: url("../../img/icon-youtube.svg") no-repeat 50% 50%;
+      background-color: @ground-color;
+    }
   }
 }
