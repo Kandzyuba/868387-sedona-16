@@ -4,8 +4,23 @@
 
 .main-nav__toggle {
   position: absolute;
-  bottom: 40px;
-  right: 40px;
+  border: none;
+
+  &--close {
+    width: 23px;
+    height: 23px;
+    top: 17px;
+    right: 20px;
+    background: url("../../img/icon-cross.svg") no-repeat;
+  }
+
+  &--menu {
+    width: 25px;
+    height: 22px;
+    bottom: 19px;
+    right: 19px;
+    background: url("../../img/icon-menu.svg") no-repeat;
+  }
 }
 
 @media (min-width: @tablet-width) {

@@ -22,6 +22,7 @@
   width: 136px;
   line-height: 26px;
   text-align: center;
+  padding-bottom: 35px;
 
   img {
     position: absolute;
@@ -32,6 +33,43 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
-    width: auto;
+    width: 100%;
+    padding: 35px 0;
+  }
+
+  .page-footer__hashtag,
+  .page-footer__social,
+  .page-footer__partner {
+    .reset();
+    width: 33%;
+  }
+
+  .page-footer__hashtag {
+    padding-left: 60px;
+    padding-top: 9px;
+  }
+
+  .page-footer__partner {
+    padding-right: 38px;
+    padding-top: 9px;
+
+    img {
+      right: 60px;
+      top: 6px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__hashtag {
+    padding-left: 120px;
+  }
+
+  .page-footer__partner {
+    padding-right: 13px;
+
+    img {
+      right: 120px;
+    }
   }
 }

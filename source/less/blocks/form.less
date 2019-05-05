@@ -2,16 +2,72 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 17px;
+
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .form__item {
   .list-reset();
-  width: auto;
+  width: 100%;
   border: none;
   text-align: left;
+  padding-bottom: 9px;
+  padding-top: 17px;
+  position: relative;
+
+  textarea {
+    margin-top: -2px;
+    margin-bottom: 36px;
+    padding-top: 13px;
+    padding-left: 20px;
+    width: 100%;
+    height: 160px;
+    border: none;
+    background-color: #f2f2f2;
+    font-family: @font;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+
+  }
+
+  &:nth-child(2) {
+    padding-bottom: 17px;
+  }
+
+  &:nth-child(2)::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 58px;
+    height: 58px;
+    background: url("../../img/icon-phone.svg") no-repeat 50% 50% #e6e6e6;
+    top: 96px;
+    right: 0;
+    z-index: 1;
+  }
+
+  &:nth-child(2)::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 58px;
+    height: 58px;
+    background: url("../../img/icon-mail.svg") no-repeat 50% 50% #e6e6e6;
+    top: 198px;
+    right: 0;
+    z-index: 1;
+  }
+}
+
+.form__item-legend {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 5px;
 }
 
 .form__item-list {
@@ -43,15 +99,28 @@
     font-weight: 700;
     padding-right: 0;
     border: none;
+    width: 100%;
+    z-index: 0;
   }
 }
 
-.form__item-legend {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  padding-bottom: 22px;
+.form__item--wrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 13px;
+
+  label {
+    padding-left: 22px;
+  }
+
+  input {
+    margin-top: 7px;
+  }
+}
+
+.form__item-radiolist {
+  margin-bottom: 0;
 }
 
 .form__item-content {
@@ -60,6 +129,88 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+  margin: auto 0;
+  padding-bottom: 45px;
+
+  &:last-child {
+    padding-bottom: 36px;
+  }
+
+  label {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 19px;
+    color: #283136;
+  }
+
+  input {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: -100;
+    opacity: 0;
+    left: 16px;
+  }
+}
+
+.form__item-radio + label::before {
+  position: absolute;
+  content: "";
+  width: 55px;
+  height: 55px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  left: -60px;
+  top: -13px;
+}
+
+.form__item-radio:checked + label::after {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 21px;
+  background-color: #333333;
+  border-radius: 50%;
+  left: -43px;
+  top: 5px;
+}
+
+.form__item-checklist {
+  margin-top: 10px;
+
+  .form__item-content {
+    padding-bottom: 55px;
+
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.form__item-check + label::before {
+  position: absolute;
+  content: "";
+  width: 55px;
+  height: 55px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  left: -60px;
+  top: -13px;
+}
+
+.form__item-check:checked + label::after {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 21px;
+  background: url("../../img/icon-tick.svg") no-repeat;
+  left: -43px;
+  top: 5px;
+}
+
+.form__item-comment {
+  margin-bottom: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -71,24 +222,196 @@
   .form__item {
     width: 100%;
 
+    &:first-child {
+      .form__item-legend {
+        padding-left: 41px;
+      }
+
+      .form__item-listarea {
+        padding-left: 42px;
+      }
+    }
+
     &:nth-child(-2n + 3) {
       width: 48%;
+
+      .form__item-legend {
+        text-align: left;
+        padding-bottom: 42px;
+      }
     }
 
     &:nth-child(3) {
       order: -1;
+
+      .form__item-content {
+        padding-bottom: 55px;
+      }
+    }
+
+    &:nth-child(2) {
+      padding-bottom: 11px;
+
+      .form__item-listarea {
+        padding-top: 5px;
+        padding-bottom: 20px;
+      }
+
+      &::before {
+        top: 105px;
+      }
+
+      &::after {
+        top: 220px;
+      }
+    }
+
+    &:nth-child(5) {
+      margin-top: 23px;
+
+      textarea {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
     }
   }
 
+  .form__item-button{
+    width: 50%;
+    margin-bottom: 64px;
+  }
+
+  .form__item-legend {
+    width: 290px;
+    font-size: 21px;
+    line-height: 26px;
+    padding-top: 22px;
+  }
+
   .form__item-checklist {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+
+    .form__item-content {
+      width: 50%;
+      padding-top: 36px;
+      padding-left: 70px;
+      margin: 0;
+      padding-bottom: 28px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .form {
-    padding: 0 90px;
+    padding: 0 120px;
+    margin-top: 9px;
     background-color: #ffffff;
+  }
+
+  .form__item {
+    &--wrap {
+      width: 50%;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+
+    &--none {
+      display: none;
+    }
+
+    &:first-child {
+      .form__item-legend {
+        padding-top: 0;
+        padding-left: 61px;
+      }
+
+      .form__item-listarea {
+        padding-left: 62px;
+      }
+    }
+
+    &:nth-child(3) {
+      padding-left: 2px;
+
+      .form__item-legend {
+        padding-top: 0;
+        padding-left: 78px;
+        width: 370px;
+      }
+    }
+
+    &:nth-child(2) {
+      .form__item-legend {
+      padding-top: 17px;
+      margin-bottom: 41px;
+      }
+
+      &::before {
+        top: 117px;
+        left: 344px;
+      }
+
+      &::after {
+        top: 117px;
+        right: 0;
+      }
+    }
+  }
+
+  .form__item-checklist {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+
+    .form__item-content {
+      width: 20.8%;
+    }
+  }
+
+  .form__item--wrap {
+    &:first-child {
+      input {
+        margin-right: 80px;
+      }
+    }
+
+    &:nth-child(2) {
+      label {
+        width: 250px;
+      }
+    }
+
+    label {
+      padding-left: 0;
+      padding-top: 10px;
+      margin-right: 0px;
+    }
+  }
+
+  .form__item-checklist {
+    label {
+      padding-left: 10px;
+      margin-left: 0;
+    }
+  }
+
+  .form__item-check + label::before {
+    left: -70px;
+    top: -13px;
+  }
+
+  .form__item-check:checked + label::after {
+    left: -53px;
+    top: 5px;
+  }
+
+  .form__item-button {
+    margin-bottom: 70px;
   }
 }

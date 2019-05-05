@@ -22,7 +22,7 @@
     content: "";
     width: 280px;
     height: 45px;
-    background-color: black;
+    background-color: #000000;
     opacity: 0.6;
     top: 347px;
     left: 20px;
@@ -48,4 +48,72 @@
   width: 320px;
   height: 240px;
   background: url("../../img/video-mobile@1x.jpg") no-repeat 0 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    margin-top: 30px;
+    padding: 0 60px;
+    padding-bottom: 30px;
+
+    &::after {
+      display: none;
+
+    }
+
+    &::before {
+      top: 621px;
+      left: 60px;
+      width: 648px;
+      height: 93px;
+      background-color: rgba(255, 0, 0, 0.6);
+      background-position: 585px 35px,
+      523px 35px,
+      35px 35px;
+    }
+  }
+
+  .video__head {
+    font-size: 30px;
+    padding-top: 32px;
+    padding-bottom: 30px;
+  }
+
+  .video__description {
+    .reset();
+    margin: 0 auto;
+    width: 420px;
+    padding-bottom: 40px;
+  }
+
+  .video__content {
+    width: 100%;
+    height: 540px;
+    background-size: 100% 499px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    margin-bottom: 42px;
+
+    &::before {
+      top: 620px;
+      left: 200px;
+      width: 800px;
+      height: 93px;
+      background-color: rgba(255, 0, 0, 0.6);
+      background-position: 736px 35px,
+      674px 35px,
+      35px 35px;
+    }
+  }
+
+  .video__content {
+    width: 800px;
+  }
+
+  .video__head {
+    padding-top: 35px;
+  }
 }
