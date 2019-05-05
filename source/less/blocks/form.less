@@ -29,7 +29,6 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
-
   }
 
   &:nth-child(2) {
@@ -276,7 +275,7 @@
     }
   }
 
-  .form__item-button{
+  .form__item-button {
     width: 50%;
     margin-bottom: 64px;
   }
@@ -318,6 +317,24 @@
       width: 50%;
       justify-content: space-between;
       flex-wrap: nowrap;
+
+      &:first-child {
+        input {
+          margin-right: 80px;
+        }
+      }
+
+      &:nth-child(2) {
+        label {
+          width: 250px;
+        }
+      }
+
+      label {
+        padding-left: 0;
+        padding-top: 10px;
+        margin-right: 0;
+      }
     }
 
     &--none {
@@ -347,8 +364,8 @@
 
     &:nth-child(2) {
       .form__item-legend {
-      padding-top: 17px;
-      margin-bottom: 41px;
+        padding-top: 17px;
+        margin-bottom: 41px;
       }
 
       &::before {
@@ -369,35 +386,13 @@
     margin: 0;
     width: 100%;
 
-    .form__item-content {
-      width: 20.8%;
-    }
-  }
-
-  .form__item--wrap {
-    &:first-child {
-      input {
-        margin-right: 80px;
-      }
-    }
-
-    &:nth-child(2) {
-      label {
-        width: 250px;
-      }
-    }
-
-    label {
-      padding-left: 0;
-      padding-top: 10px;
-      margin-right: 0px;
-    }
-  }
-
-  .form__item-checklist {
     label {
       padding-left: 10px;
       margin-left: 0;
+    }
+
+    .form__item-content {
+      width: 20.8%;
     }
   }
 
