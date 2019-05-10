@@ -4,8 +4,8 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: auto;
-  padding-bottom: 20px;
-  padding-top: 28px;
+  padding-bottom: 18px;
+  padding-top: 23px;
   background-color: white;
 }
 
@@ -13,10 +13,6 @@
   width: 300px;
   padding-left: 50px;
   padding-top: 10px;
-
-  p {
-    padding: 0 20px;
-  }
 }
 
 .features__item--house {
@@ -25,7 +21,7 @@
 }
 
 .features__item--souvenir {
-  background: url("../../img/icon-gift.svg") no-repeat 22px 0;
+  background: url("../../img/icon-gift.svg") no-repeat 22px -1px;
   background-size: 38px 38px;
 }
 
@@ -36,8 +32,9 @@
 
 .features__name {
   .reset();
-  position: relative;
+  padding: 0 20px;
   margin-bottom: 14px;
+  position: relative;
   text-align: left;
   font-weight: 700;
   font-size: 18px;
@@ -46,8 +43,8 @@
 
 .features__description {
   .reset();
+  padding: 0 20px;
   margin-bottom: 18px;
-  padding-top: 30px;
   line-height: 21px;
   color: @description-color;
   text-align: start;
@@ -60,55 +57,47 @@
 @media (min-width: @tablet-width) {
   .features {
     width: 768px;
-    padding-bottom: 60px;
+    padding-top: 29px;
+    padding-bottom: 61px;
   }
 
   .features__item {
     width: 33%;
-    padding: 0;
+    padding: 0 45px;
+    padding-top: 130px;
 
     &:nth-child(2) {
       order: 1;
-    }
-
-    &:nth-child(3) {
-      .features__description {
-        width: 195px;
-      }
     }
   }
 
   .features__name {
     text-align: center;
-    margin-top: 133px;
-    margin-bottom: 23px;
     font-size: 21px;
-    line-height: 26px;
+    margin-bottom: 20px;
   }
 
   .features__description {
-    margin: 0 auto;
-    line-height: 21px;
-    width: 205px;
+    .reset();
     text-align: center;
 
     &--none {
-      display: none;
+      display: block;
     }
   }
 
   .features__item--house {
-    background-position: 50% 34px;
+    background-position: 50% 31px;
     background-size: 75px 75px;
   }
 
   .features__item--souvenir {
-    background-position: 50% 34px;
+    background-position: 50% 28px;
     background-size: 75px 75px;
   }
 
   .features__item--burger {
-    background-position: 50% 36px;
+    background-position: 50% 31px;
     background-size: 75px 75px;
   }
 }

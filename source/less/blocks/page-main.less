@@ -68,81 +68,87 @@
 @media (min-width: @tablet-width) {
   .page-main {
     width: auto;
-    padding-top: 0;
   }
 
-  .page-main__head {
-    &-name {
-      padding-top: 46px;
-      font-size: 21px;
-      padding-bottom: 26px;
-    }
-
-    &-name--form {
-      font-size: 30px;
-      line-height: 26px;
-      padding-top: 70px;
-      padding-bottom: 5px;
-    }
-
-    &-name--photo {
-      font-size: 30px;
-      line-height: 26px;
-      padding-top: 68px;
-    }
-
-    &-description {
-      padding-bottom: 51px;
-    }
-
-    &-name,
-    &-description {
-      width: 500px;
-      margin: 0 auto;
-    }
+  .page-main__preview {
+    padding: 0 70px;
+    padding-top: 47px;
+    padding-bottom: 50px;
 
     &--photo {
-      width: 430px;
+      padding: 0 170px;
+      padding-top: 71px;
+      padding-bottom: 67px;
     }
 
     &--form {
-      width: 440px;
+      border: none;
+      padding: 0 165px;
+      padding-top: 71px;
+      padding-bottom: 75px;
     }
   }
 
-  .page-main__foot {
-    &-name,
-    &-description,
-    &-button {
-      width: 458px;
-      margin: auto;
+  .page-main__head {
+    font-size: 21px;
+
+    &--index {
+      margin-bottom: 28px;
     }
 
-    &-name {
-      padding-top: 58px;
+    &--photo {
       font-size: 30px;
-      line-height: 26px;
-      padding-bottom: 30px;
+      margin-bottom: 31px;
     }
 
-    &-description {
-      width: 450px;
-      padding-bottom: 45px;
+    &--form {
+      font-size: 30px;
+      margin-bottom: 31px;
     }
+  }
 
-    &-button {
-      margin-bottom: 60px;
-    }
+  .page-main__hostel {
+    padding: 0 150px;
+    padding-top: 56px;
+    padding-bottom: 60px;
 
-    &-none {
-      display: block;
+    .page-main__name {
+      font-size: 30px;
+      margin-bottom: 31px;
     }
+  }
+
+  .page-main__button {
+    margin-top: 42px;
+    width: 460px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .page-main {
+    width: auto;
+  }
+
+  .page-main__preview {
+    padding: 0 340px;
+    padding-top: 47px;
+    padding-bottom: 50px;
+
+    &--photo {
+      padding: 0 380px;
+      padding-top: 108px;
+      padding-bottom: 67px;
+    }
+
+    &--form {
+      padding: 0 380px;
+      padding-top: 108px;
+      padding-bottom: 75px;
+    }
+  }
+
   .page-main__head {
-    &-name {
+    &-index {
       padding-top: 104px;
       padding-bottom: 32px;
     }
