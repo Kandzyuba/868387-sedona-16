@@ -31,8 +31,8 @@
           <p class="page-main__description page-main__description--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="form" action="https://echo.htmlacademy.ru" method="GET">
-          <fieldset class="form__item">
-            <legend class="form__item-legend">Представьтесь:</legend>
+          <fieldset class="form__item form__item--user">
+            <legend class="form__legend form__legend--user">Представьтесь:</legend>
             <ul class="form__list form__list--user">
               <li class="form__point form__point--user">
                 <label class="form__label" for="content-name">Имя*:</label>
@@ -48,8 +48,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__item">
-            <legend class="form__item-legend">Контактная информация:</legend>
+          <fieldset class="form__item form__item--contact">
+            <legend class="form__legend form__legend--contact">Контактная информация:</legend>
             <ul class="form__list form__list--contact">
               <li class="form__point form__point--contact">
                 <label class="form__label form__label--contact" for="content-phone"><span class="form__item--none">Контактный</span> телефон*:</label>
@@ -61,25 +61,25 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__item">
-            <legend class="form__item-legend">Ваше общее впечатление:</legend>
+          <fieldset class="form__item form__item--radio">
+            <legend class="form__legend form__legend--radio">Ваше общее впечатление:</legend>
             <ul class="form__radiolist">
-              <li class="form__content">
+              <li class="form__content form__content--radio">
                 <input class="form__radio" type="radio" id="positive" name="grid-group" value="positive" checked>
                 <label class="form__label" for="positive">Скорее положительное</label>
               </li>
-              <li class="form__content">
+              <li class="form__content form__content--radio">
                 <input class="form__radio" type="radio" id="negative" name="grid-group" value="negative">
                 <label class="form__label" for="negative">Скорее отрицательное</label>
               </li>
-              <li class="form__content">
+              <li class="form__content form__content--radio">
                 <input class="form__radio" type="radio" id="question" name="grid-group" value="quesstion">
                 <label class="form__label" for="question">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__item">
-            <legend class="form__item-legend">Посещенные<br class="form__item-legend--none"> достопримечательности:</legend>
+          <fieldset class="form__item form__item--check">
+            <legend class="form__legend form__legend--check">Посещенные<br class="form__legend--none"> достопримечательности:</legend>
             <ul class="form__checklist">
               <li class="form__content form__content--check">
                 <input class="form__check" type="checkbox" id="check-demon" name="demon" checked>
@@ -99,8 +99,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__item">
-            <legend class="form__item-legend">Опишите свои эмоции:</legend>
+          <fieldset class="form__item form__item--feedback">
+            <legend class="form__legend form__legend--feedback">Опишите свои эмоции:</legend>
             <textarea class="form__area" name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="form__item-button button" type="submit">Отправить отзыв</button>
