@@ -56,12 +56,16 @@
   border: none;
   text-align: left;
   padding: 0 20px;
-  padding-bottom: 26px;
+  padding-bottom: 24px;
   position: relative;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   &:first-child {
     padding-bottom: 6px;
+  }
+
+  &--contact {
+    padding-bottom: 25px;
   }
 
   &--feedback {
@@ -79,6 +83,10 @@
   font-weight: 700;
   text-align: center;
   padding-top: 18px;
+
+  &--contact {
+    padding-top: 17px;
+  }
 }
 
 .form__list {
@@ -110,6 +118,7 @@
     position: relative;
     flex-wrap: wrap;
     height: 58px;
+    margin-bottom: 45px;
 
     &:nth-child(1)::before {
       position: absolute;
@@ -117,7 +126,7 @@
       width: 58px;
       height: 58px;
       background: url("../../img/icon-phone.svg") no-repeat 50% 50% #e6e6e6;
-      bottom: 0;
+      bottom: -45px;
       right: 0;
       z-index: 1;
     }
@@ -128,7 +137,7 @@
       width: 58px;
       height: 58px;
       background: url("../../img/icon-mail.svg") no-repeat 50% 50% #e6e6e6;
-      bottom: 0;
+      bottom: -45px;
       right: 0;
       z-index: 1;
     }
@@ -330,7 +339,7 @@
 
   .form__point {
     &--contact {
-      margin-bottom: 11px;
+      margin-bottom: 56px;
     }
   }
 
@@ -380,7 +389,7 @@
 
     &--check {
       margin: 0;
-      margin-top: 41px;
+      margin-top: 52px;
     }
 
     &--feedback {
@@ -418,14 +427,22 @@
     &--contact {
       width: 50%;
       flex-wrap: nowrap;
+      margin-bottom: 0;
 
       &:first-child {
         &::before {
           right: 80px;
+          bottom: 0;
         }
 
         .form__input {
           margin-right: 80px;
+        }
+      }
+
+      &:last-child {
+        &::after {
+          bottom: 0;
         }
       }
 
