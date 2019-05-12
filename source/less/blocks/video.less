@@ -1,10 +1,115 @@
+.video {
+  padding-top: 33px;
+  position: relative;
+  padding-bottom: 94px;
+  margin-bottom: 6px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 66px;
+    bottom: 39px;
+    left: 20px;
+    background: url("../../img/icon-video-fullscreen.svg") no-repeat 237px 23px, url("../../img/icon-video-subtitles.svg") no-repeat 174px 23px, url("../../img/icon-video-replay.svg") no-repeat 25px 22px;
+    background-color: #f2f2f2;
+  }
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 280px;
+    height: 45px;
+    background-color: #000000;
+    opacity: 0.6;
+    bottom: 105px;
+    left: 20px;
+  }
+}
+
 .video__head {
+  .reset();
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
 }
 
 .video__description {
-  padding-left: 10px;
+  .reset();
+  margin: 0 auto;
+  margin-top: 27px;
+  width: 246px;
   color: @description-color;
+}
+
+.video__content {
+  width: 320px;
+  height: 240px;
+  background: url("../../img/video-mobile@1x.jpg") no-repeat 0 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    margin-top: 33px;
+    padding: 0 60px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      top: 615px;
+      left: 60px;
+      width: 648px;
+      height: 93px;
+      background-color: rgba(255, 0, 0, 0.6);
+      background-position: 587px 37px, 524px 37px, 35px 37px;
+    }
+  }
+
+  .video__head {
+    font-size: 30px;
+    padding-top: 32px;
+    padding-bottom: 30px;
+  }
+
+  .video__description {
+    .reset();
+    margin: 0 auto;
+    width: 420px;
+    padding-bottom: 38px;
+  }
+
+  .video__content {
+    width: 100%;
+    height: 540px;
+    background-size: 100% 499px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    margin-top: 29px;
+    margin-bottom: 42px;
+
+    &::before {
+      top: 620px;
+      left: 200px;
+      width: 800px;
+      height: 93px;
+      background-color: rgba(255, 0, 0, 0.6);
+      background-position: 736px 35px, 674px 35px, 35px 35px;
+    }
+  }
+
+  .video__content {
+    width: 800px;
+  }
+
+  .video__head {
+    padding-top: 35px;
+  }
 }

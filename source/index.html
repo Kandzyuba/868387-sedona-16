@@ -18,13 +18,18 @@
             <li class="site-list__item"><a href="">HTML Academy</a></li>
             <li class="site-list__item"><a href="#"><img src="./img/logo-sedona-mobile.svg" alt="Логотип Sedona"></a></li>
           </ul>
-          <button class="main-nav__toggle"></button>
+          <button class="main-nav__toggle main-nav__toggle--close"></button>
+          <button class="main-nav__toggle main-nav__toggle--menu"></button>
         </nav>
-        <img class="page-header__logo" width="320" height="389" src="img/bg-back-mobile@1x.jpg" alt="Welcome">
+        <section class="page-header__welcome welcome">
+          <img class="welcome__sedona" src="./img/text-sedona-index.svg" alt="Sedona" width="281px" height="auto">
+        </section>
       </header>
       <main class="page-main">
-        <p class="page-main__head-name">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="page-main__head-description">Рассмотрим 5 причин по которым Седона круче, чем Гранд каньон!</p>
+        <div class="page-main__preview">
+          <p class="page-main__head page-main__head--index">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="page-main__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+        </div>
         <ul class="reasons">
           <li class="reasons__item">
             <div class="reasons__item-content">
@@ -36,23 +41,23 @@
           </li>
           <li class="reasons__item">
             <ul class="features">
-              <li class="features__item">
+              <li class="features__item features__item--house">
                 <p class="features__name">Жилье</p>
                 <p class="features__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="features__item">
+              <li class="features__item features__item--souvenir">
                 <p class="features__name">Сувениры</p>
-                <p class="features__description">Не только китайского, но и местного производства!</p>
+                <p class="features__description">Не только китайского, <br class="features__description--none">но и местного производства!</p>
               </li>
-              <li class="features__item">
+              <li class="features__item features__item--burger">
                 <p class="features__name">Еда</p>
-                <p class="features__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="features__description">Всегда заказывайте фирменный бургер, <br class="features__description--none">вы не разочаруетесь!</p>
               </li>
             </ul>
           </li>
           <li class="reasons__item">
             <div class="reasons__item-content">
-              <p class="reasons__name">Там есть мост дьявола</p>
+              <p class="reasons__name">Там есть<br class="reasons__item--none"> мост дьявола</p>
               <p class="reasons__text-num">— №2 —</p>
               <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
@@ -74,14 +79,16 @@
             <p class="reasons__description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
-        <p class="page-main__foot-name">Заинтересовались?</p>
-        <p class="page-main__foot-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="page-main__foot-button button">Найти гостинницу</button>
+        <div class="page-main__hostel">
+          <p class="page-main__name">Заинтересовались?</p>
+          <p class="page-main__description">Укажите предполагаемые даты поездки,<br class="features__description--none"> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="page-main__button button">Найти гостиницу</button>
+        </div>
         <p class="map"><img src="img/bg-map-mobile@1x.jpg" alt="Седона на местности"></p>
       </main>
       <footer class="page-footer">
         <p class="page-footer__hashtag">#Visitsedona</p>
-        <ul class="social">
+        <ul class="page-footer__social social">
           <li class="social__item">
             <a class="social__button" href="#">
               <p class="social__name visually-hidden">Твиттер</p>
@@ -98,7 +105,7 @@
             </a>
           </li>
         </ul>
-        <a class="page-footer__partner">Разработано <img src="img/logo-htmlacademy.svg" alt="HTML Академия"></a>
+        <a class="page-footer__partner">Разработано<img src="img/logo-htmlacademy.svg" alt="HTML Академия"></a>
       </footer>
     </div>
   </body>

@@ -1,10 +1,23 @@
 .map {
+  .reset();
   width: 320px;
+  height: 350px;
+  margin-bottom: 5px;
+
+  img {
+    .reset();
+  }
 }
 
 @media (min-width: @tablet-width) {
   .map {
     width: @tablet-width;
+    margin-bottom: 0;
+
+    img {
+      width: 100%;
+      height: 350px;
+    }
   }
 }
 
