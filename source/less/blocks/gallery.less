@@ -65,9 +65,13 @@
     &:first-child {
       width: 100%;
 
-      img {
-        width: 648px;
+      .gallery__imagebox {
         height: 400px;
+      }
+
+      .gallery__imagebox img{
+        height: 400px;
+        width: 648px;
       }
 
       .gallery__likes {
@@ -94,6 +98,10 @@
     }
   }
 
+  .gallery__image {
+    height: 100%;
+  }
+
   .gallery__container {
     display: flex;
     justify-content: space-between;
@@ -116,6 +124,10 @@
     padding-top: 0;
     padding-left: 20px;
   }
+
+  .gallery__imagebox {
+    height: 267px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -135,9 +147,8 @@
     &:first-child {
       width: 100%;
 
-      img {
+      .gallery__imagebox img{
         width: 1200px;
-        height: 400px;
       }
     }
   }
