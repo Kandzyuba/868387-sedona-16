@@ -61,6 +61,10 @@
   padding-bottom: 40px;
 }
 
+.reasons__imagebox {
+  height: 260px;
+}
+
 @media (min-width: @tablet-width) {
   .reasons {
     width: auto;
@@ -87,7 +91,7 @@
     }
 
     &:nth-child(3) {
-      img {
+      .reasons__imagebox {
         order: -1;
       }
     }
@@ -123,6 +127,10 @@
   .reasons__text-num {
     margin-top: 7px;
     margin-bottom: 21px;
+  }
+
+  .reasons__imagebox {
+    height: 256px;
   }
 }
 
@@ -178,5 +186,11 @@
       padding-left: 50px;
       padding-right: 50px;
     }
+  }
+
+  .reasons__imagebox img {
+    width: 100%;
+    background-position: cover;
+    height: auto;
   }
 }
