@@ -35,6 +35,18 @@
     text-decoration: none;
   }
 
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    a {
+      color: rgba(255, 255, 255, 0.2);
+    }
+  }
+
   &:last-child {
     background-color: white;
     z-index: 1;
@@ -64,6 +76,14 @@
       order: -1;
     }
 
+    &:hover {
+      background-color: white;
+    }
+
+    &:active {
+      background-color: white;
+    }
+
     a {
       display: inline-block;
       color: @head-color;
@@ -71,10 +91,30 @@
       line-height: 26px;
       padding: 15px 0;
       width: auto;
+
+      &:hover {
+        color: #81b3d2;
+      }
+
+      &:active {
+        color: rgba(0, 0, 0, 0.3);
+      }
     }
 
     img {
       margin: 0 0 0 -35%;
+    }
+  }
+
+  .site-list__item--active a {
+    color: #766357;
+
+    &:hover {
+      color: #604e43;
+    }
+
+    &:active {
+      color: rgba(118, 99, 87, 0.3);
     }
   }
 }
