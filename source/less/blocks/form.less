@@ -62,6 +62,15 @@
   background-color: #f2f2f2;
   font-weight: 700;
 
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: white;
+    border: 4px solid #e5e5e5;
+  }
+
   &::placeholder {
     color: black;
   }
@@ -82,7 +91,12 @@
   }
 
   &--contact {
+    margin-top: 1px;
     padding-bottom: 25px;
+  }
+
+  &--radio {
+    padding-bottom: 29px;
   }
 
   &--feedback {
@@ -93,6 +107,7 @@
   &-button {
     margin-left: 20px;
     margin-top: 0;
+    margin-bottom: 44px;
   }
 }
 
@@ -238,6 +253,10 @@
   top: 20px;
 }
 
+.form__radio:active + label::after {
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
 .form__check + label::before {
   position: absolute;
   content: "";
@@ -265,11 +284,15 @@
 
 .form__check:active + label::before {
   background-color: #d5d5d5;
-  opacity: 0.8;
+}
+
+.form__check:active + label::after {
+  background: url("../../img/icon_active-tick.svg") no-repeat;
 }
 
 .form__item-comment {
   margin-bottom: 0;
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -317,7 +340,7 @@
   .form__item {
     width: 100%;
     border: none;
-    padding-bottom: 52px;
+    padding-bottom: 02px;
 
     &:nth-child(-2n + 3) {
       width: 50%;
@@ -325,7 +348,7 @@
 
     &--contact {
       margin: 0 20px;
-      margin-top: 13px;
+      margin-top: 41px;
       padding: 0;
       padding-bottom: 40px;
     }
@@ -392,9 +415,11 @@
 
   .form__item-button {
     width: 325px;
+    margin-bottom: 0px;
   }
 
   .form__item-comment {
+    display: block;
     font-size: 14px;
     margin-top: 18px;
     padding-right: 20px;
