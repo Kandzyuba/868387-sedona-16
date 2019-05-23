@@ -115,6 +115,8 @@
   font-weight: 700;
   text-align: center;
   padding-top: 18px;
+  margin-left: auto;
+  margin-right: auto;
 
   &--contact {
     padding-top: 17px;
@@ -306,6 +308,7 @@
     font-size: 21px;
 
     &--user {
+      margin-left: 0;
       padding-left: 38px;
       margin-bottom: 34px;
       text-align: left;
@@ -318,6 +321,7 @@
     }
 
     &--radio {
+      margin-left: 0;
       margin-bottom: 34px;
       text-align: left;
       padding-top: 0;
@@ -513,6 +517,10 @@
 
   .form__checklist {
     margin-top: 36px;
+
+    .form__label {
+      padding-right: 0;
+    }
   }
 
   .form__label--contact {
@@ -526,14 +534,11 @@
     }
 
     &--check {
-      width: 25%;
+      width: 21%;
 
-      &:nth-child(2) {
-        padding-left: 21px;
-      }
 
-      &:nth-child(n + 3) {
-        padding-left: 36px;
+      &:nth-child(3) {
+        padding-left: 10px;
       }
     }
   }
