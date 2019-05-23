@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.min.css" rel="stylesheet">
+    <link href="js/picturefill.js" asyns>
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <div class="container">
       <header class="page-header">
         <nav class="main-nav">
@@ -116,13 +120,13 @@
           </div>
           <div class="video__controls">
             <button class="video__button video__button--replay">
-              <svg class="video__icon" width="16" height="20"><use xlink:href="img/sprite.svg#icon-video-replay"></use>1</svg>
+              <svg class="video__icon" width="16" height="20"><use xlink:href="#icon-video-replay"></use>1</svg>
             </button>
             <button class="video__button video__button--subtitles">
-              <svg class="video__icon" width="32" height="20"><use xlink:href="img/sprite.svg#icon-video-subtitles"></use></svg>
+              <svg class="video__icon" width="32" height="20"><use xlink:href="#icon-video-subtitles"></use></svg>
             </button>
             <button class="video__button video__button--fullscreen">
-              <svg class="video__icon" width="20" height="20"><use xlink:href="img/sprite.svg#icon-video-fullscreen"></use></svg>
+              <svg class="video__icon" width="20" height="20"><use xlink:href="#icon-video-fullscreen"></use></svg>
             </button>
           </div>
         </section>
