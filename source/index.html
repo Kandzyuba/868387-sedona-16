@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.min.css" rel="stylesheet">
-    <link href="js/picturefill.js" asyns>
+    <script src="js/picturefill.js" asyns=""></script>
   </head>
   <body>
     <div class="container">
@@ -16,7 +16,7 @@
             <li class="site-list__item site-list__item--active"><a href="">Главная</a></li>
             <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
             <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
-            <li class="site-list__item"><a href="">HTML Academy</a></li>
+            <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
             <li class="site-list__item">
               <a href="#">
                 <picture class="site-list__imagebox">
@@ -41,7 +41,7 @@
         </div>
         <ul class="reasons">
           <li class="reasons__item">
-            <div class="reasons__item-content">
+            <div class="reasons__item-content reasons__item-content--triangle">
               <p class="reasons__name">Настоящий городок</p>
               <p class="reasons__text-num">— №1 —</p>
               <p class="reasons__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -108,7 +108,7 @@
           <button class="page-main__button button">Найти гостиницу</button>
         </div>
         <p class="map">
-          <picture>
+          <picture class="map__static">
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
@@ -116,6 +116,7 @@
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
             <img class="map__image" src="img/bg-map-mobile@1x.jpg" width="320" height="350" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Седона на местности">
           </picture>
+          <iframe class="map__js" src="https://yandex.ru/map-widget/v1/?um=constructor%3A09d18f2e9b9af9c35abf363bb7ee2bccc74949e62ad989fb4a9aca1b0d3250f0&amp;source=constructor" width="100%" height="350"></iframe>
         </p>
       </main>
       <footer class="page-footer">
@@ -137,7 +138,7 @@
             </a>
           </li>
         </ul>
-        <a href="#" class="page-footer__partner">Разработано</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__partner" aria-label="Разработано HTML Академией">Разработано</a>
       </footer>
     </div>
   </body>

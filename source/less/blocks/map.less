@@ -1,12 +1,38 @@
 .map {
   .reset();
+  position: relative;
   width: 320px;
   height: 350px;
   margin-bottom: 5px;
 
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-map-marker.svg");
+    width: 27px;
+    height: 27px;
+    top: 46%;
+    left: 49%;
+    z-index: 2;
+  }
+
   img {
     .reset();
   }
+}
+
+.map__static {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  left: 0;
+  bottom: -7px;
+}
+
+.map__js {
+  position: relative;
+  z-index: 3;
+  border: 0;
 }
 
 @media (min-width: @tablet-width) {
