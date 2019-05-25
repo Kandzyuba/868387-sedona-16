@@ -240,7 +240,8 @@
   top: 3px;
 }
 
-.form__radio:hover + label::before {
+.form__radio:hover + label::before,
+.form__radio:focus + label::before {
   background-color: #e5e5e5;
 }
 
@@ -248,7 +249,7 @@
   background-color: #d5d5d5;
 }
 
-.form__radio:checked + label::after {
+.form__radio:checked + label::after, {
   position: absolute;
   content: "";
   width: 21px;
@@ -284,7 +285,8 @@
   top: 22px;
 }
 
-.form__check:hover + label::before {
+.form__check:hover + label::before,
+.form__check:focus + label::before {
   background-color: #e5e5e5;
 }
 

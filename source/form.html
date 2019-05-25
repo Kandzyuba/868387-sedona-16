@@ -4,14 +4,17 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.min.css" rel="stylesheet">
-    <script src="js/picturefill.js" asyns=""></script>
+    <script src="js/picturefill.js"></script>
   </head>
   <body>
     <div class="container">
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--open">
+            <!--main-nav--open отвечает за открытие/закрытие меню при реализации с JS-->
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a href="index.html">Главная</a></li>
             <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
@@ -45,11 +48,11 @@
             <ul class="form__list form__list--user">
               <li class="form__point form__point--user">
                 <label class="form__label" for="content-name">Имя*:</label>
-                <input class="form__input" type="text" id="content-name" name="name" placeholder="Петр">
+                <input class="form__input" type="text" required id="content-name" name="name" placeholder="Петр">
               </li>
               <li class="form__point form__point--user">
                 <label class="form__label" for="content-surname">Фамилия*:</label>
-                <input class="form__input" type="text" id="content-surname" name="surname" placeholder="Иванов">
+                <input class="form__input" type="text" required id="content-surname" name="surname" placeholder="Иванов">
               </li>
               <li class="form__point form__point--user">
                 <label class="form__label form__label--user" for="content-patronymic">Отчество:</label>
@@ -62,11 +65,11 @@
             <ul class="form__list form__list--contact">
               <li class="form__point form__point--contact">
                 <label class="form__label form__label--contact" for="content-phone"><span class="form__disabled-span">Контактный</span> телефон*:</label>
-                <input class="form__input" type="tel" id="content-phone" name="phone" placeholder="Введите телефон">
+                <input class="form__input" type="number" required id="content-phone" name="phone" placeholder="Введите телефон">
               </li>
               <li class="form__point form__point--contact">
                 <label class="form__label form__label--contact" for="content-email">Электронная почта*:</label>
-                <input class="form__input" type="email" id="content-email" name="email" placeholder="Введите e-mail">
+                <input class="form__input" type="email" required id="content-email" name="email" placeholder="Введите e-mail">
               </li>
             </ul>
           </fieldset>
@@ -112,7 +115,7 @@
             <legend class="form__legend form__legend--feedback">Опишите свои эмоции:</legend>
             <textarea class="form__area" name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button class="form__item-button button" type="submit"  aria-labelledby="Кнопка отправки отзыва">Отправить отзыв</button>
+          <button class="form__item-button button" type="submit"  aria-label="Кнопка отправки отзыва">Отправить отзыв</button>
           <p class="form__item-comment">* — обязательные поля</p>
         </form>
       </main>
@@ -140,12 +143,12 @@
       <section class="popup-access">
         <h2 class="popup-access__header">Ваш отзыв отправлен!</h2>
         <p class="popup-access__content">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="button popup-access__button"  aria-labelledby="Закрыть окно">Закрыть окно</button>
+        <button class="button popup-access__button"  aria-label="Закрыть окно">Закрыть окно</button>
       </section>
       <section class="popup-negative">
         <h2 class="popup-negative__header">Что-то пошло не так!</h2>
         <p class="popup-negative__content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button  class="button popup-negative__button"  aria-labelledby="Закрыть окно">Ок</button>
+        <button  class="button popup-negative__button"  aria-label="Закрыть окно">Ок</button>
       </section>
     </div>
   </body>
