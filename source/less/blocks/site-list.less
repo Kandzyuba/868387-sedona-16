@@ -1,6 +1,6 @@
 .site-list {
   .list-reset();
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -17,15 +17,6 @@
   font-weight: 700;
   text-align: center;
   box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
-
-  img {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    margin: 0 0 0 -15%;
-    text-align: center;
-  }
 
   a {
     display: table-cell;
@@ -46,15 +37,23 @@
       color: rgba(255, 255, 255, 0.2);
     }
   }
+}
 
-  &:last-child {
-    background-color: white;
-    z-index: 1;
-  }
+.main-nav--nojs .site-list {
+  display: flex;
+}
+
+.site-list--show {
+  display: flex;
+}
+
+.site-list--show ~ .main-nav__toggle {
+  background: url("../img/icon-cross.svg") no-repeat;
 }
 
 @media (min-width: @tablet-width) {
   .site-list {
+    display: flex;
     background-color: #ffffff;
   }
 
@@ -64,16 +63,8 @@
     height: 56px;
     box-shadow: none;
 
-    &:nth-child(1) {
-      order: -3;
-    }
-
     &:nth-child(2) {
-      order: -2;
-    }
-
-    &:nth-child(5) {
-      order: -1;
+      margin-right: 155px;
     }
 
     &:hover {
@@ -123,10 +114,8 @@
   .site-list__item {
     width: 239px;
 
-    .site-list__logo {
-      width: 188px;
-      height: 96px;
-      margin: 0 0 0 -40%;
+    &:nth-child(2) {
+      margin-right: 237px;
     }
   }
 }

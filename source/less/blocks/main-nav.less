@@ -2,33 +2,63 @@
   position: relative;
 }
 
+.main-nav__logo {
+  position: relative;
+  display: block;
+  width: 320px;
+  height: 56px;
+  z-index: 4;
+  cursor: default;
+}
+
+.main-nav__image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  margin: 0 0 0 -15%;
+  text-align: center;
+  z-index: 5;
+  cursor: pointer;
+}
+
 .main-nav__toggle {
   position: absolute;
   border: none;
+  cursor: pointer;
+  display: block;
+  width: 25px;
+  height: 22px;
+  top: 18px;
+  right: 18px;
+  background: url("../img/icon-menu.svg") no-repeat;
+  z-index: 10;
+}
 
-  &--close {
-    display: none;
-    width: 23px;
-    height: 23px;
-    top: 17px;
-    right: 20px;
-    background: url("../img/icon-cross.svg") no-repeat;
-  }
-
-  &--menu {
-    display: none;
-    width: 25px;
-    height: 22px;
-    bottom: 19px;
-    right: 19px;
-    background: url("../img/icon-menu.svg") no-repeat;
-    z-index: 1;
-  }
+.main-nav--nojs > .main-nav__toggle {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
   .main-nav {
     width: auto;
+  }
+
+  .main-nav__logo {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    margin: 0 0 0 -7%;
+    width: 102px;
+  }
+
+  .main-nav__image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0;
   }
 
   .main-nav__toggle {
@@ -39,5 +69,17 @@
 @media (min-width: @desktop-width) {
   .main-nav {
     background-color: #ffffff;
+  }
+
+  .main-nav__logo {
+    margin: 0 0 0 -8%;
+    width: 188px;
+    height: 96px;
+    top: 0;
+  }
+
+  .main-nav__image {
+    width: 188px;
+    height: 96px;
   }
 }

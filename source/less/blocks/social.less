@@ -14,41 +14,40 @@
     height: 48px;
     width: 46px;
     margin-bottom: 7px;
+    background-color: @ground-color;
 
-    &:nth-child(1) {
+    &--twitter {
       background: url("../img/icon-twitter.svg") no-repeat 50% 50%;
       background-color: @ground-color;
+
+      &:active {
+        background: url("../img/icon_active-twitter.svg") no-repeat 50% 50%;
+        background-color: #5496bd;
+      }
     }
 
-    &:nth-child(2) {
+    &--facebook {
       background: url("../img/icon-facebook.svg") no-repeat 50% 50%;
       background-color: @ground-color;
+
+      &:active {
+        background: url("../img/icon_active-facebook.svg") no-repeat 50% 50%;
+        background-color: #5496bd;
+      }
     }
 
-    &:nth-child(3) {
+    &--youtube {
       background: url("../img/icon-youtube.svg") no-repeat 50% 50%;
       background-color: @ground-color;
+
+      &:active {
+        background: url("../img/icon_active-youtube.svg") no-repeat 50% 50%;
+        background-color: #5496bd;
+      }
     }
 
     &:hover {
       background-color: #669ec0;
-    }
-
-    &:active {
-      &:nth-child(1) {
-        background: url("../img/icon_active-twitter.svg") no-repeat 50% 50%;
-        background-color: #5496bd;
-      }
-
-      &:nth-child(2) {
-        background: url("../img/icon_active-facebook.svg") no-repeat 50% 50%;
-        background-color: #5496bd;
-      }
-
-      &:nth-child(3) {
-        background: url("../img/icon_active-youtube.svg") no-repeat 50% 50%;
-        background-color: #5496bd;
-      }
     }
   }
 }

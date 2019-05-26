@@ -13,25 +13,21 @@
   <body>
     <div class="container">
       <header class="page-header">
-        <nav class="main-nav main-nav--open">
-            <!--main-nav--open отвечает за открытие/закрытие меню при реализации с JS-->
+        <nav class="main-nav main-nav--nojs">
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a href="index.html">Главная</a></li>
             <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
             <li class="site-list__item site-list__item--active"><a href="#">Форма отзыва</a></li>
             <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-            <li class="site-list__item">
-              <a href="index.html">
-                <picture class="site-list__imagebox">
-                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-                  <img class="site-list__logo"  width="102" height="83" src="img/logo-sedona-mobile.svg" alt="Логотип Sedona">
-                </picture>
-              </a>
-            </li>
           </ul>
-          <button class="main-nav__toggle main-nav__toggle--close"></button>
-          <button class="main-nav__toggle main-nav__toggle--menu"></button>
+          <a class="main-nav__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="main-nav__image"  width="102" height="83" src="img/logo-sedona-mobile.svg" alt="Логотип Sedona">
+            </picture>
+          </a>
+          <button class="main-nav__toggle"></button>
         </nav>
         <section class="welcome welcome--mini">
           <img class="welcome__sedona welcome__sedona--padding" src="./img/text-sedona.svg" alt="Sedona" width="230" height="40">
@@ -122,17 +118,17 @@
       <footer class="page-footer">
         <p class="page-footer__hashtag">#Visitsedona</p>
         <ul class="social">
-          <li class="social__item">
+          <li class="social__item social__item--twitter">
             <a class="social__button" href="#">
               <p class="social__name visually-hidden">Твиттер</p>
             </a>
           </li>
-          <li class="social__item">
+          <li class="social__item social__item--facebook">
             <a class="social__button" href="#">
               <p class="social__name visually-hidden">Фейсбук</p>
             </a>
           </li>
-          <li class="social__item">
+          <li class="social__item social__item--youtube">
             <a class="social__button" href="#">
               <p class="social__name visually-hidden">Ютуб</p>
             </a>
@@ -151,5 +147,6 @@
         <button  class="button popup-negative__button"  aria-label="Закрыть окно">Ок</button>
       </section>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
